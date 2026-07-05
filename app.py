@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 st.title("🏥 Sistema Hospitalario de Urgencias")
-st.caption("Simulación con SimPy - PriorityResource, Resource, Eventos y Estadísticas")
+st.caption("Simulación con SimPy")
 
 st.divider()
 
@@ -86,7 +86,7 @@ if simular:
     # MÉTRICAS
     # ==========================
 
-    st.subheader("📋 Resumen general")
+    st.subheader("Resumen general")
 
     c1, c2, c3, c4 = st.columns(4)
 
@@ -173,7 +173,7 @@ if simular:
     # RESUMEN
     # ==========================
 
-    st.subheader("📊 Estadísticas")
+    st.subheader("Estadísticas")
 
     resumen = pd.DataFrame({
 
@@ -223,7 +223,7 @@ if simular:
     # EVENTOS
     # ==========================
 
-    st.subheader("📜 Registro de eventos")
+    st.subheader("Registro de eventos")
 
     df = pd.DataFrame(
 
